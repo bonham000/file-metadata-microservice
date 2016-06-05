@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>File MetaData Service Desig</title>
     
-    <head>
-        
-        <title>File Metadata Microservice</title>
-        <meta charset="UTF-8">
-        
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-        
-    </head>
-    
-    <body>
-        
-        <div>HELLO WORLD</div><br>
-        
-        <form method="POST" enctype="multipart/form-data" action="/upload">
-            <input type="file" name="files"/>
-            <input type="submit" value="Upload"/>
-        </form>
-        
-        <script type="text/javascript" src="/js/index.js"></script>
-        
-    </body>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/style.css">
 
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>File Metadata Microservice</h1>
+      
+      <p class="subtitle">Upload a file to view it's file size</p>
+      
+
+      <form class="form" method="POST" enctype="multipart/form-data" action="/upload">
+        <label class="fileBtn" for="file-upload">Custom Upload</label>
+        <input id="file-upload" name="files" type="file"/><br>
+        <input class="submitBtn" type="submit" disabled value="Upload"/>
+      </form>
+      
+      <p class="how"><a id="details" href="#!"><i>How does this project work?</i></a></p>
+
+    </div>
+
+    <div class="details">
+
+      <div class="box">
+
+        <p class="project">This is a Free Code Camp project built with node.js, express.js, and the node.js middleware <a target="_blank" href="https://www.npmjs.com/package/multer">multer</a>.</p>
+
+        <p class="close"><a id="close" href="#!">(close)</a></p>
+
+        <p class="about"><a target="_blank" href="http://sean-smith.me"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a></p>
+
+      </div>
+
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+  </body>
 </html>

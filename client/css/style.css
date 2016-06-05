@@ -1,4 +1,98 @@
 body {
-    background: rgb(40,40,40);
-    color: rgb(225,225,225);
+  background: rgb(230, 60, 90);
+  background: rgb(255, 89, 76);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(30,30,30);
+  padding-bottom: 25px;
+}
+.container {
+  margin-top: 100px;
+}
+h1 {
+  font-size: 40px;
+}
+.subtitle {
+  margin-top: -15px;
+  font-size: 22px;
+}
+.form {
+  margin-top: 50px;
+}
+input[type="file"] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.fileBtn {
+  background: rgb(78, 110, 185);
+  border-radius: 3px;
+  font-size: 60px;
+  display: inline-block;
+  padding: 30px 60px;
+  cursor: pointer;
+}
+.fileBtn:hover {
+  background: rgb(30,30,30);
+  color: rgb(78, 110, 185);
+}
+.submitBtn {
+  margin-top: 25px;
+  background: rgb(28, 155, 155);
+  font-size: 35px;
+  border-radius: 3px;
+  border: none;
+  padding: 12px 24px;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background: rgb(247, 194, 74);
+}
+.how {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+a, a:visited {
+  color: rgb(86, 17, 141);
+}
+a:hover {
+  color: white;
+}
+
+.details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(247, 194, 74,.95);
+  z-index: 5;
+  color: rgb(30,30,30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project a, .project a:visited,
+.about a, .about a:visited {
+  color: rgb(30,30,30);
+}
+.details a:hover {
+  color: rgb(245,245,245);
+}
+.box {
+  width: 1000px;
+  margin-top: -50px;
+}
+.project {
+  font-size: 45px;
+}
+.close {
+  font-size: 22px;
 }

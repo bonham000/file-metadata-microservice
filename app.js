@@ -25,7 +25,8 @@ app.post('/upload', upload.single('files'), function(req, res) {
     
     var size = req.file.size;
     
-    res.send("File Size: " + size + " bytes");
+    alert("File Size: " + size + " bytes");
+    
     
 });
 
