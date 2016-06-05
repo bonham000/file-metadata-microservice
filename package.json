@@ -1,0 +1,22 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "File Metadata Microservice for Free Code Camp's Back End Curriculum",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonham000/file-metadata-microservice.git"
+  },
+  "author": "Sean Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonham000/file-metadata-microservice/issues"
+  },
+  "homepage": "https://github.com/bonham000/file-metadata-microservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
