@@ -19,13 +19,19 @@ app.get('/', function(req, res) {
 });
 
 app.post('/upload', upload.single('files'), function(req, res) {
-    
-    console.log(req.body);
+
+    console.log("Upload successful, here are the file details:");
     console.log(req.file);
     
-    var size = req.file.size;
+    var name = req.file.originalname;
+    var size = req.file.size + " bytes";
     
-    alert("File Size: " + size + " bytes");
+    var info = new Object();
+    
+    info["File Name"] = name;
+    info["File Size"] = size;
+    
+    res.send(info);
     
     
 });
