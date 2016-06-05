@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bonham000/file-metadata-microservice#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "multer": "^1.1.0"
   }
 }
